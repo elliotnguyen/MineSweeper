@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MinesweeperActivity"
+    android:background="#484646"
+
+    android:id="@+id/rootLinearLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:id="@+id/siblingView">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editNumRows"
+            android:hint="@string/enter_rows"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:background="@drawable/blank"
+            android:layout_marginRight="5dp"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editNumCols"
+            android:hint="@string/enter_cols"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:background="@drawable/blank"
+            android:layout_marginRight="5dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonStart"
+            android:text="@string/start"
+            android:layout_weight="1"
+            android:background="@drawable/blank"
+            android:layout_marginRight="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/buttonRestart"
+            android:text="@string/restart"
+            android:background="@drawable/blank"
+            android:layout_marginRight="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/buttonFlagOn"
+            android:background="@drawable/flag"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:useDefaultMargins="false">
+
+    </GridLayout>
+
+</LinearLayout>
